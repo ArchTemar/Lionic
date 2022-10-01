@@ -94,7 +94,7 @@ html {
     margin-top: 10px;
 }
 
-/*We do*/
+/*what We do*/
 .section-do {
     padding-top: 140px;
     padding-bottom: 100px;
@@ -110,10 +110,47 @@ html {
 }
 
 .section-do-item{
-    flex: 1 1 25%;
+    flex: 1 1 25%; /*разрешаем расти/разрешаем сжиматься/25% тк 4 карточки*/
     outline: 3px solid red;
 }
 
 .section-do-item:not(:last-child) {
     margin-right: 30px;
+}
+
+/*Our Happy Clients*/
+.section-clients {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-clients-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-clients-item {
+    outline: 3px solid red;
+    flex: 1 1 33,3%; /*разрешаем расти/разрешаем сжиматься/33,3% тк 3 карточки*/
+}
+
+.section-clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.section-clients-user {
+    display: flex;
+    align-items: center;
+}
+
+.section-clients-avatar {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: 2px solid #5188c4;
+    border-radius: 50%; /*делаем круг*/
 }
