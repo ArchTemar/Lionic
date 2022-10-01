@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+   text-decoration: none; 
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%; /*не виходило за кордони боксу*/
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px; /* (на 30пкс больше чем, в макете тк паддинги) */
+    margin-left: auto;
+    margin-right: auto; /*центрируем */
+    padding-right: 15px; /*чтоб не искажалось при масштрабировании*/
+    padding-left: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 16px;
+    font-size: 12px;
+    line-height: 1; /*висота розміру шрифта*/
+    text-transform: uppercase;
+    color: white;
+    background-color: #3172b9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Heading */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    margin-right: auto; /*отталкиваем соседей в право*/
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px; /*отталкиваем кнопку*/
+}
+
+.header {
+    height: 110px;
+}
+
+.header-btn {
+    margin-left: 80px;
+}
+
+/* Hero */
+
+.hero-container {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.hero-content {
+    max-width: 50%; /*уменьшаем ширину контейнера*/
+}
+
+.section-hero-heading {
+    margin-bottom: 20px;
+}
+
+.section-hero-description {
+    margin-bottom: 30px;
+}
+
+.section-hero-btn-description {
+    margin-top: 10px;
+}
+
+/*We do*/
+.section-do {
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+
+.section-description {
+    margin-top: 25px;
+}
+
+.section-do-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.section-do-item{
+    flex: 1 1 25%;
+    outline: 3px solid red;
+}
+
+.section-do-item:not(:last-child) {
+    margin-right: 30px;
+}
