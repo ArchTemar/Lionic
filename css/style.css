@@ -3,8 +3,9 @@
 }
 
 a {
-   text-decoration: none; 
+    text-decoration: none;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -12,7 +13,8 @@ ul {
 }
 
 img {
-    max-width: 100%; /*не виходило за кордони боксу*/
+    max-width: 100%;
+    /*не виходило за кордони боксу*/
 }
 
 html {
@@ -20,10 +22,13 @@ html {
 }
 
 .container {
-    max-width: 1200px; /* (на 30пкс больше чем, в макете тк паддинги) */
+    max-width: 1200px;
+    /* (на 30пкс больше чем, в макете тк паддинги) */
     margin-left: auto;
-    margin-right: auto; /*центрируем */
-    padding-right: 15px; /*чтоб не искажалось при масштрабировании*/
+    margin-right: auto;
+    /*центрируем */
+    padding-right: 15px;
+    /*чтоб не искажалось при масштрабировании*/
     padding-left: 15px;
 }
 
@@ -31,7 +36,8 @@ html {
     display: inline-block;
     padding: 15px 16px;
     font-size: 12px;
-    line-height: 1; /*висота розміру шрифта*/
+    line-height: 1;
+    /*висота розміру шрифта*/
     text-transform: uppercase;
     color: white;
     background-color: #3172b9;
@@ -52,7 +58,8 @@ html {
 }
 
 .logo {
-    margin-right: auto; /*отталкиваем соседей в право*/
+    margin-right: auto;
+    /*отталкиваем соседей в право*/
 }
 
 .nav-list {
@@ -60,7 +67,8 @@ html {
 }
 
 .nav-item:not(:last-child) {
-    margin-right: 50px; /*отталкиваем кнопку*/
+    margin-right: 50px;
+    /*отталкиваем кнопку*/
 }
 
 .header {
@@ -79,7 +87,8 @@ html {
 }
 
 .hero-content {
-    max-width: 50%; /*уменьшаем ширину контейнера*/
+    max-width: 50%;
+    /*уменьшаем ширину контейнера*/
 }
 
 .section-hero-heading {
@@ -109,8 +118,9 @@ html {
     margin-top: 50px;
 }
 
-.section-do-item{
-    flex: 1 1 25%; /*разрешаем расти/разрешаем сжиматься/25% тк 4 карточки*/
+.section-do-item {
+    flex: 1 1 25%;
+    /*разрешаем расти/разрешаем сжиматься/25% тк 4 карточки*/
     outline: 3px solid red;
 }
 
@@ -124,18 +134,14 @@ html {
     padding-bottom: 100px;
 }
 
-.section-heading {
-    margin-bottom: 40px;
-}
-
 .section-clients-list {
     display: flex;
-    justify-content: space-between;
+    margin-top: 35px;
 }
 
 .section-clients-item {
-    outline: 3px solid red;
-    flex: 1 1 33,3%; /*разрешаем расти/разрешаем сжиматься/33,3% тк 3 карточки*/
+    flex: 1 1 33, 3%;
+    /*разрешаем расти/разрешаем сжиматься/33,3% тк 3 карточки*/
 }
 
 .section-clients-item:not(:last-child) {
@@ -152,5 +158,84 @@ html {
     height: 60px;
     margin-right: 15px;
     border: 2px solid #5188c4;
-    border-radius: 50%; /*делаем круг*/
+    border-radius: 50%;
+    /*делаем круг*/
+}
+
+/* Contacts*/
+.section-contacts {
+    padding-top: 85px;
+    padding-bottom: 95px;
+}
+
+.section-contacts-list {
+    display: flex;
+    margin-top: 43px;
+}
+
+.section-contacts-item {
+    flex: 1 1 33.3%;
+}
+
+.section-contacts-info {
+    max-width: 250px;
+}
+
+.section-contacts-icon {
+    display: block;
+    height: 26px;
+    margin-bottom: 25px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    /*перше-ширина друга-висота*/
+    border-color: transparent;
+}
+
+.section-contacts-icon-gps {
+    background-image: url(/img/gps.png);
+}
+
+.section-contacts-icon-phone {
+    background-image: url(/img/phone.png);
+}
+
+.section-contacts-icon-mail {
+    background-image: url(/img/mail.png);
+    background-size: auto 19px;
+    /*перше-ширина друга-висота*/
+}
+
+.section-contacts-heading {
+    display: block;
+    margin-bottom: 40px;
+}
+
+/* Footer */
+.footer {
+    height: 125px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 25px;
+}
+
+.footer-nav-list {
+    display: flex;
+}
+
+.footer-nav-item:not(:last-child) {
+    margin-right: 35px;
 }
